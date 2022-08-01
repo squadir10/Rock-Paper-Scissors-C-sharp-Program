@@ -12,15 +12,15 @@ namespace RPS
             String player, CPU, answer;
             int player_score, CPU_score;
             
-            
+            player_score = 0;
+            CPU_score = 0;
             Console.WriteLine("Welcome to Rock, Paper, Scissors! ");
            while (replay)// to keep running the program
            {
                player = "";
                CPU = "";
                answer = "";
-               player_score = 0;
-               CPU_score = 0;
+               
                
                while (player != "1" && player != "2" && player != "3") //to ensure the player enters the right values
                {
@@ -101,16 +101,22 @@ namespace RPS
                        {
                            Console.WriteLine("You win! :D");
                            player_score += 1;
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                            
                        }
                        else if (CPU == "PAPER")
                        {
                            Console.WriteLine("It's a tie!");
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                        }
                        else
                        {
                            Console.WriteLine("You lose :( ");
                            CPU_score += 1;
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                        }
                        break;
                    case "3":
@@ -118,15 +124,21 @@ namespace RPS
                        {
                            Console.WriteLine("You lose :( ");
                            CPU_score += 1;
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                        }
                        else if (CPU == "PAPER")
                        {
                            Console.WriteLine("You win! :D");
                            player_score += 1;
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                        }
                        else
                        {
                            Console.WriteLine("It's a tie!");
+                           Console.WriteLine("Scores:");
+                           Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
                        }
                        break;
                }
@@ -137,8 +149,7 @@ namespace RPS
                
                /*
                 
-                Console.WriteLine("Scores:");
-               Console.WriteLine("\tWins:\t{0},\tLoses:\t{1}", player_score, CPU_score);
+               
                 
                 Console.Write("would you like to play again? (Y/N): ");
                answer = Console.ReadLine();
