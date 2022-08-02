@@ -83,21 +83,21 @@ namespace RPS
                     case "1":
                         if (CPU == "ROCK") {
                             
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("It's a tie!");
                            
                         } else if (CPU == "PAPER") {
                             
                             CPU_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You lose :(");
                             
                         } else {
                             
                             player_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You win! :D");
                             
@@ -108,13 +108,13 @@ namespace RPS
                         if (CPU == "ROCK") {
                             
                             player_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You win! :D");
                             
                         } else if (CPU == "PAPER") {
                             
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("It's a tie!");
                             
@@ -122,7 +122,7 @@ namespace RPS
                         else {
                             
                             CPU_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You lose :( ");
                             
@@ -134,20 +134,20 @@ namespace RPS
                         if (CPU == "ROCK") {
                             
                             CPU_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You lose :( ");
                             
                         } else if (CPU == "PAPER") {
                             
                             player_score += 1;
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("You win! :D");
                             
                         } else {
                            
-                            Console.WriteLine("***SCORES***");
+                            Console.WriteLine("\t\t***SCORES***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             Console.WriteLine("It's a tie!");
                             
@@ -172,7 +172,7 @@ namespace RPS
                         answer = answer.ToUpper();
                         if (answer == "Y") {
                             replay_game = true;
-                            Console.WriteLine("***RESULTS THUS FAR***");
+                            Console.WriteLine("\t\t***RESULTS THUS FAR***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
                             
                             if (player_score > CPU_score) {
@@ -194,7 +194,7 @@ namespace RPS
                         else if (answer == "N") {
                             replay_game = false;
                             Console.WriteLine("\n");
-                            Console.WriteLine("***RESULTS***");
+                            Console.WriteLine("\t\t***RESULTS***");
                             Console.WriteLine("\tPlayer: {0},\tComputer: {1}", player_score, CPU_score);
 
                             if (player_score > CPU_score) {
