@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
+﻿
 /*Author: Sabrina Quadir 
  *Date: 8/1/2022
  * Description: a simple program about the classic game: Rock, Paper, Scissors - in which the player plays against
